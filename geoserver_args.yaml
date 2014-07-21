@@ -1,2 +1,2 @@
 shape_file_name: Territoire.shp
-location_column_name: name
+location_column_name: nom
