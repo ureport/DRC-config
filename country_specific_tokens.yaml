@@ -8,6 +8,11 @@ rules:
             - 'nah'
             - 'nay'
             - 'n'
+        'fr':
+            - 'non'
+            - 'nan'
+            - 'niet'
+            - 'negatif'
     'yes':
         'en':
             - 'yes'
@@ -15,11 +20,18 @@ rules:
             - 'y'
             - 'yah'
             - 'yey'
+        'fr':
+            - 'oui'
+            - 'ouais'
+            - 'ui'
+            - 'affirmatif'
 
 opt_in_words:
     - 'join'
+    - 'participer'
 opt_out_words:
     - 'quit'
     - 'stop'
     - 'unjoin'
-    - 'giki'
+    - 'quitter'
+    - 'desinscrire'
