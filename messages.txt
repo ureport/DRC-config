@@ -1,7 +1,7 @@
-0=Welcome to U-report!, U-report is a FREE service that helps youth speak out on issues in their communities using SMS. SPEAK UP and BE HEARD!
-1=Now we are going to ask a few questions to finish your registration as a U-reporter. How did you hear about ureport?
-2=Now, please reply with the name of your REGION.
-4=What is your AGE? Please reply with only the number.
-5=Are you male or female? Please reply F for female or M for male.
-6=Which inkhundla from your district are you reporting from?
-7=Congratulations! You are now a registered member of U-report! With U-report, Your Voice Counts! We will send the first U-report poll soon!
+0=Bienvenu à U-report! U-report est un service GRATUIT qui permet aux jeunes de s'exprimer sur des questions qui les touchent dans leurs communautés en utilisant le SMS. DONNEZ VOTRE OPINION et QU’ELLE SOIT ENTENDUE!
+1=Nous allons maintenant vous poser quelques questions pour terminer votre inscription comme U-reporter. Comment avez-vous entendu parler de U-report ?
+2=Maintenant, veuillez répondre en donnant le nom de votre Commune ou de votre Territoire.
+4=Quel AGE avez-vous? Veuillez répondre en donnant un nombre seulement.
+5=Etes-vous un home ou une femme? Veuillez répondre par F pour femme et par H pour homme.
+6=De quel Village ou Quartier de votre Territoire ou Commune reportez-vous ?
+7=Félicitations ! Vous êtes maintenant un membre inscrit de U-report ! Avec U-report, Votre Voix Compte ! Nous envoyons le premier sondage U-report bientôt !
