@@ -1,4 +1,4 @@
-0=Bienvenu à U-report! U-report est un service GRATUIT qui permet aux jeunes de s'exprimer sur des questions qui les touchent dans leurs communautés en utilisant le SMS. DONNEZ VOTRE OPINION et QU’ELLE SOIT ENTENDUE!
+0=Bienvenu à U-report! U-report est un service GRATUIT vous permettant de s'exprimer sur SMS. DONNEZ VOTRE OPINION et QU’ELLE SOIT ENTENDUE!
 1=Nous allons maintenant vous poser quelques questions pour terminer votre inscription comme U-reporter. Comment avez-vous entendu parler de U-report ?
 2=Maintenant, veuillez répondre en donnant le nom de votre Commune ou de votre Territoire.
 4=Quel AGE avez-vous? Veuillez répondre en donnant un nombre seulement.
