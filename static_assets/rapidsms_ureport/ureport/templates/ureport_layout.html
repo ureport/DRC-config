@@ -7,7 +7,7 @@
     <title>Ureport - {% block page_title %}{% trans "Voice Matters" %}{% endblock %}</title>
 
     {% block stylesheets %}
-    {% include "ureport/css.html" %}
+	{% include "ureport/css.html" %}
     {% endblock %}
     <script type="text/javascript" src="{{ MEDIA_URL }}ureport/javascripts/jquery.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL }}ureport/javascripts/ureport.min.js?41"></script>
@@ -52,7 +52,7 @@
             <div class="nav-side">
                 <ul>
                 <li><a href="/">{% trans "HOME" %}</a></li>
-                <li><a href="/pollresults">{% trans "POLL RESULTS" %}</a></li>
+                <li style="padding-top:0px; padding-bottom:6px;"><a href="/pollresults">{% trans "POLL RESULTS" %}</a></li>
                 <li><a href="/about_ureport/">{% trans "ABOUT UREPORT" %}</a></li>
                 <li><a href="/join/">{% trans "HOW TO JOIN" %}</a></li>
                 </ul>
@@ -64,7 +64,7 @@
             <div class="intro">
                 <p>
                 {% captureas citizens_trans %}{% trans "Ugandans" %}{% endcaptureas %}
-            {% blocktrans %}Ureport is a free SMS-based system that allows young {{ citizens_trans }} to speak out on what's happening in communities across the country, and work together with other community leaders for positive change.{% endblocktrans %}
+		    {% blocktrans %}Ureport is a free SMS-based system that allows young {{ citizens_trans }} to speak out on what's happening in communities across the country, and work together with other community leaders for positive change.{% endblocktrans %}
                 </p>
             </div>
             <div class="join">
@@ -91,34 +91,36 @@
             {% endblock %}
         </div>
 
-        <div class="footer">
-           <div class="sponsors">
-           {% trans "Supported by" %}:
-           {% include 'ureport/footer_links.html' %}
-           </div>
-           <div class="footerlinks">
-               <div class="nav-bottom">
+	    <div class="footer">
+	       <div class="sponsors">
+	       {% trans "Supported by" %}:
+		   {% include 'ureport/footer_links.html' %}
+	       </div>
+	       <div class="footerlinks">
+	           <div class="nav-bottom">
                 <ul>
-                    <li class="first"><a href="/">{% trans "HOME" %}</a></li>
-                    <li><a href="/#poll_results">{% trans "POLL RESULTS" %}</a></li>
-                    <li><a href="about_ureport">{% trans "ABOUT UREPORT" %}</a></li>
-                    <li><a href="/join/">{% trans "HOW TO JOIN" %}</a></li>
-                    <li><a href="{% url pulse %}">{% trans "HOW TO JOIN" %}</a> </li>
-                    {% if user.is_authenticated %}
-                       <li><a href="{% url ureport-polls user.pk %}">{% trans "POLL ADMIN" %}</a></li>
-                       <li><a href="{% url messagelog %}">{% trans "MESSAGE LOG" %}</a></li>
-                       <li><a href="{% url ureport-contact %}">{% trans "UREPORTERS" %}</a></li>
-                       <li><a href="{% url flaggedmessages %}">{% trans "FLAGGED MESSAGES" %}</a></li>
+	                <li class="first"><a href="/">{% trans "HOME" %}</a></li>
+	                <li><a href="/#poll_results">{% trans "POLL RESULTS" %}</a></li>
+	                <li><a href="/about_ureport/">{% trans "ABOUT UREPORT" %}</a></li>
+	                <li><a href="/join/">{% trans "HOW TO JOIN" %}</a></li>
+	                {% if user.is_authenticated %}
+	                   <li><a href="{% url ureport-polls user.pk %}">{% trans "POLL ADMIN" %}</a></li>
+	                   <li><a href="{% url messagelog %}">{% trans "MESSAGE LOG" %}</a></li>
+	                   <li><a href="{% url ureport-contact %}">{% trans "UREPORTERS" %}</a></li>
+	                   <li><a href="{% url flaggedmessages %}">{% trans "FLAGGED MESSAGES" %}</a></li>
                         <li><a href="{% url classifier %}">{% trans "A-CLASS" %}</a></li>
                     <li><a href="{% url alerts user.pk%}">{% trans "REAL TIME" %}</a></li>
-                    {% else %}
-                       <li><a href="/accounts/login">{% trans "LOGIN" %}</a></li>
-                    {% endif %}
+                    <li><a href="/accounts/logout">{% trans "LOGOUT" %}</a></li>
+	                {% else %}
+	                   <li><a href="/accounts/login">{% trans "LOGIN" %}</a></li>
+	                {% endif %}
                 </ul>
-               </div>
-               <p> {% trans "&copy; 2010 - 2012 UNICEF et al." %}</p>
-            </div>
-        </div>
+	           </div>
+	           <p> 
+	          {% trans "&copy; 2010 -" %}  {% now "Y" %} {% trans "UNICEF et al." %}  
+	           </p>
+	        </div>
+	    </div>
     </div>
         <script type="text/javascript" src="{{ MEDIA_URL }}rapidsms/javascripts/collapse.js"></script>
 
