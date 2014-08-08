@@ -8,7 +8,7 @@ rules:
             - 'nah'
             - 'nay'
             - 'n'
-        'fr':
+        'drc_fr':
             - 'non'
             - 'nan'
             - 'niet'
@@ -20,7 +20,7 @@ rules:
             - 'y'
             - 'yah'
             - 'yey'
-        'fr':
+        'drc_fr':
             - 'oui'
             - 'ouais'
             - 'ui'
