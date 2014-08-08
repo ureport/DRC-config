@@ -1,4 +1,4 @@
-0=Bienvenu à Unieleze! Unieleze est un service GRATUIT vous permettant de s'exprimer sur SMS. DONNEZ VOTRE OPINION et QU’ELLE SOIT ENTENDUE!
+0=Bienvenu à Unieleze! Unieleze est un service GRATUIT vous permettant de s'exprimer sur SMS. DONNEZ VOTRE OPINION et QU'ELLE SOIT ENTENDUE!
 1=Nous allons maintenant vous poser quelques questions pour terminer votre inscription comme Unielezeer. Comment avez-vous entendu parler de Unieleze ?
 2=Maintenant, veuillez répondre en donnant le nom de votre Commune ou de votre Territoire.
 4=Quel AGE avez-vous? Veuillez répondre en donnant un nombre seulement.
