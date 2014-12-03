@@ -1,7 +1,7 @@
-0=Bienvenu à Unieleze! Unieleze est un service GRATUIT vous permettant de s'exprimer sur SMS. DONNEZ VOTRE OPINION et QU'ELLE SOIT ENTENDUE!
+0=Bienvenu à Unieleze! C'est GRATUIT. Donnez votre opinion par SMS et soyez entendu! Nous allons vous poser 5 questions pour compléter votre inscription.
 1=Nous allons maintenant vous poser quelques questions pour terminer votre inscription comme Ureporter. Comment avez-vous entendu parler de Unieleze ?
 2=Maintenant, veuillez répondre en donnant le nom de votre Commune ou de votre Territoire.
 4=Quel AGE avez-vous? Veuillez répondre en donnant un nombre seulement.
 5=Etes-vous un home ou une femme? Veuillez répondre par F pour femme et par H pour homme.
 6=De quel Village ou Quartier de votre Territoire ou Commune reportez-vous ?
-7=Félicitations ! Vous êtes maintenant un membre inscrit de Unieleze ! Avec Unieleze, Votre Voix Compte ! Nous envoyons le premier sondage Unieleze bientôt !
+7=Félicitations ! Vous êtes maintenant un membre inscrit d'Unieleze! Avec Unieleze, votre voix compte, faites l’entendre en participant aux sondages !
