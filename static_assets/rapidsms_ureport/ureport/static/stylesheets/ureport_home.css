@@ -142,7 +142,13 @@ div.why-placeholder span {
     padding: 5px 0;
     text-decoration: none;
     cursor: pointer;
-    font-size: 10px;
+}
+
+.menu-item {
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid #000000 thin;
 }
 
 .nav-side ul li a:hover {

@@ -10,23 +10,21 @@
 	{% include "ureport/css.html" %}
     {% endblock %}
     <script type="text/javascript" src="{{ MEDIA_URL }}ureport/javascripts/jquery.js"></script>
-<script type="text/javascript" src="{{ MEDIA_URL }}ureport/javascripts/ureport.min.js?41"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}ureport/javascripts/ureport.min.js?41"></script>
     <script type="text/javascript" src="{{ MEDIA_URL }}ureport/javascripts/jquery-ui.js"></script>
+     <script type="text/javascript">
 
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23521720-1']);
+          _gaq.push(['_trackPageview']);
 
-         <script type="text/javascript">
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
 
-              var _gaq = _gaq || [];
-              _gaq.push(['_setAccount', 'UA-23521720-1']);
-              _gaq.push(['_trackPageview']);
-
-              (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-              })();
-
-            </script>
+        </script>
 {% block top_js %}
 {% endblock %}
 
@@ -50,16 +48,14 @@
 
         <div class="sidebar">
             <div class="nav-side">
-                <ul>
-                <li><a href="/">{% trans "HOME" %}</a></li>
-                <li style="padding-top:0px; padding-bottom:6px;"><a href="/pollresults">{% trans "POLL RESULTS" %}</a></li>
-                <li><a href="/about_ureport/">{% trans "ABOUT UREPORT" %}</a></li>
-                <li><a href="/join/">{% trans "HOW TO JOIN" %}</a></li>
-                </ul>
+                <div class="menu-item"><a href="/">{% trans "HOME" %}</a></div>
+                <div class="menu-item"><a href="/pollresults">{% trans "POLL RESULTS" %}</a></div>
+                <div class="menu-item"><a href="/about_ureport/">{% trans "ABOUT UREPORT" %}</a></div>
+                <div class="menu-item"><a href="/join/">{% trans "HOW TO JOIN" %}</a></div>
+                <div class="menu-item"><a href="{% url pulse %}">{% trans "NATIONAL PULSE" %}</a></div>
             </div>
 
             {% block sidecontent %}
-
 
             <div class="intro">
                 <p>
@@ -68,7 +64,8 @@
                 </p>
             </div>
             <div class="join">
-                <a href="/signup"> <img src="{{ MEDIA_URL }}ureport/images/join_us.png"/></a>
+                <a href="/signup">
+                    <img src="{{ MEDIA_URL }}ureport/images/join_us.png"/></a>
             </div>
                 {% if quote %}
                     <div class="quotebox">
@@ -103,6 +100,7 @@
 	                <li><a href="/#poll_results">{% trans "POLL RESULTS" %}</a></li>
 	                <li><a href="/about_ureport/">{% trans "ABOUT UREPORT" %}</a></li>
 	                <li><a href="/join/">{% trans "HOW TO JOIN" %}</a></li>
+                    <li><a href="{% url pulse %}">{% trans "NATIONAL PULSE" %}</a> </li>
 	                {% if user.is_authenticated %}
 	                   <li><a href="{% url ureport-polls user.pk %}">{% trans "POLL ADMIN" %}</a></li>
 	                   <li><a href="{% url messagelog %}">{% trans "MESSAGE LOG" %}</a></li>
